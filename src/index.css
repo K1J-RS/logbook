@@ -1,0 +1,96 @@
+:root {
+  --page-black: #0b0d0f;
+  --shell: #0e1113;
+  --surface: #12161a;
+  --surface-raised: #171c20;
+  --surface-tint: #0f1316;
+  --hairline: #171c20;
+  --border-subtle: #1b2024;
+  --border-subtle-2: #1f252a;
+  --border: #22282d;
+  --border-2: #262d33;
+  --border-strong: #2e3a40;
+  --border-strong-2: #333b41;
+  --border-strong-3: #37474d;
+
+  --cyan: #6fc3d6;
+  --cyan-text-on: #08191e;
+  --cyan-tint: #1d2a2f;
+  --amber: #e0a542;
+  --red: #c96a5a;
+  --red-text-on-tint: #e7a79a;
+  --red-border: #4a2e2a;
+  --green: #74b487;
+
+  --text-primary: #e7ebed;
+  --text-secondary: #9aa5ac;
+  --text-tertiary: #8e9aa1;
+  --text-muted: #7c878e;
+  --text-dim: #6b767d;
+  --text-faint: #5b666d;
+  --text-faint-2: #4e585f;
+
+  --mono: 'IBM Plex Mono', 'SF Mono', Consolas, monospace;
+  --sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--page-black);
+  color: var(--text-primary);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+a:hover {
+  color: #8fd8e8;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  color: var(--text-faint-2);
+}
+
+button {
+  cursor: pointer;
+}
+
+[data-scrollrow] {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+[data-scrollrow]::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
